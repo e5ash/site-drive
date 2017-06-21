@@ -1,3 +1,110 @@
+@media screen and (max-width: 1920px) {
+  .header, .footer {
+    background-size: auto; } }
+
+@media screen and (max-width: 1165px) {
+  .cabinet {
+    text-align: center; }
+    .cabinet .wrapper img {
+      left: auto; }
+    .cabinet .wrapper p {
+      background: #FFDE00;
+      padding: 3px 10px;
+      background: url("../img/span-bg.png") no-repeat;
+      background-size: 100% 100%;
+      padding: 10px;
+      font-size: 14px;
+      line-height: normal;
+      text-align: center; }
+      .cabinet .wrapper p:after {
+        display: none; }
+      .cabinet .wrapper p:nth-of-type(1) {
+        top: 55px;
+        text-align: center;
+        left: -webkit-calc(50% - 125px);
+        left: calc(50% - 125px); }
+      .cabinet .wrapper p:nth-of-type(2) {
+        left: -webkit-calc(50% - 383px);
+        left: calc(50% - 383px);
+        width: 240px; }
+      .cabinet .wrapper p:nth-of-type(3) {
+        left: auto;
+        top: 865px;
+        right: -webkit-calc(50% - 384px);
+        right: calc(50% - 384px);
+        width: 300px;
+        padding: 15px; }
+        .cabinet .wrapper p:nth-of-type(3) br {
+          display: none; } }
+
+@media screen and (max-width: 955px) {
+  h1 {
+    font-size: 32px;
+    line-height: 45px; }
+  h2 {
+    font-size: 30px; }
+  h3 {
+    font-size: 20px; }
+  .text {
+    margin-top: 30px;
+    max-width: 635px;
+    width: 100%; }
+  .icons {
+    margin-right: 0; }
+    .icons + p {
+      margin-right: 0; }
+      .icons + p + p {
+        margin-right: 0; }
+        .icons + p + p + p {
+          margin-right: 0;
+          margin-bottom: 35px; }
+  .footer {
+    min-height: 160px;
+    background-position-y: 30px; } }
+
+@media screen and (max-width: 870px) {
+  .cabinet {
+    display: none; }
+    .cabinet img {
+      width: 100%; }
+  .footer {
+    margin-top: 40px; } }
+
 @media screen and (max-width: 768px) {
-  .w2 .col, .w3 .col, .w4 .col, .w5 .col, .w6 .col {
+  h1 {
+    padding-top: 30px;
+    margin-bottom: 20px; }
+    h1 br {
+      display: none; } }
+
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 28px;
+    line-height: 36px; }
+  h2 {
+    font-size: 24px; }
+  h3 {
+    font-size: 18px; } }
+
+@media screen and (max-width: 500px) {
+  .icons {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .icons .col {
+      float: none;
+      width: 100%;
+      margin-bottom: 30px; }
+      .icons .col:last-of-type {
+        margin-bottom: 0; }
+    .icons .img {
+      margin-bottom: 5px; } }
+
+@media screen and (max-width: 425px) {
+  .text span.bg {
+    background: none;
+    font-weight: 300;
+    display: inline;
+    width: auto;
+    margin-right: 5px; }
+  .button {
     width: 100%; } }

@@ -3,7 +3,7 @@
 
 $color-1: #000
 $font-size: 16px
-$font-family-1: 'Tahoma', sans-serif
+$font-family-1: 'MuseoSansCyrl', sans-serif
 $transition-speed: .3s
 
 *
@@ -13,107 +13,155 @@ $transition-speed: .3s
 	box-sizing: border-box
 
 body
-	font: $font-size $font-family-1
+	font-size: $font-size
+	font-family: $font-family-1
+	font-weight: 300
 	color: $color-1
 	background: white
 	box-sizing: border-box
-
-h1, h2, h3, h4, h5, h6
-	font-size: inherit
-	font-weight: inherit
-
-
-ul
-	font-size: 0
-	li
-		font-size: $font-size
-	&.li_line
-		li
-			display: inline-block
-
-	&.li_reset
-		li
-			list-style-type: none
-
-
 
 span
 	position: relative
 	display: inline-block
 
-
 a
 	color: $color-1
 	text-decoration: none
-	border-bottom: 1px solid transparent
 	transition: $transition-speed
 
-
-/* Button */
-button, input[type="button"], input[type="reset"]
-	background: none
-	cursor: pointer
-
 .button
-	display: inline-block
-	color: $color-1
-	background: white
-	padding: 5px 10px
-	cursor: pointer
-	font: $font-size $font-family-1
-	&:hover
-		background: #EBEBEB
-	&.button_block
-		display: block
-
-
-/* Input */
-.input
-	display: inline-block
-	padding: 5px 10px
-	border: 1px solid gray
-	&:active
-		border: 1px solid #00B7FF
-		transition: border-color $transition-speed
-	.input_block
-		display: block
-
-
-/* Textarea */
-.textarea
 	display: block
-	padding: 5px 10px
-	border: 1px solid gray
-	resize: none
-	font: $font-size $font-family-1
-	&:active
-		border: 1px solid #00B7FF
-		transition: border-color $transition-speed
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	width: 310px
+	height: 55px
+	border-radius: 7px
+	background: url("../img/button-default.jpg")
+	font-weight: 500
+	font-size: 18px
+	color: #ffffff
+	line-height: 57px
+	box-shadow: 0px 11px 37px -1px rgba(255,169,18,0.31)
+	&:hover
+		background: url("../img/button-hover.jpg")
+		box-shadow: none
 
-/* Radio */
-.radio
-	.radio__input
-		display: none
-		&:checked + .radio__label
-			&:before
+.header
+	background: url("../img/header.png") no-repeat center top
+	min-height: 351px
+	background-size: 100% 351px
+h1
+	font-size: 40px
+	font-weight: 500
+	line-height: 50px
+	text-align: center
+	padding-top: 100px
+	margin-bottom: 75px
 
-	.radio__label
+h2
+	font-size: 40px
+	font-weight: 500
+
+h3
+	font-size: 25px   
+	font-weight: 500
+	margin-bottom: 20px
+
+.text
+	width: 635px
+	margin-right: auto
+	margin-left: auto
+	margin-top: 60px
+	p
+		margin-bottom: 20px
+		line-height: 24px
+	span.bg
+		background: url("../img/span-bg.png")
+		height: 29px
+		width: 413px
+		font-weight: 500
 		display: block
-		&:before
-			content: ''
-			display: inline-block
-			margin-right: 10px
+		padding-left: 25px
+		margin-left: -25px
+		padding-top: 3px
 
-/* Checkbox */
-.checkbox
-	.checkbox__input
-		display: none
-		&:checked + .checkbox__label
-			&:before
+.icons
+	border-radius: 3px
+	border: 1px solid #f1eee7
+	text-align: center
+	padding-top: 50px
+	padding-bottom: 54px
+	margin-right: -45px
+	margin-bottom: 35px
+	.img
+		height: 105px
+		margin-bottom: 30px 
+		img
+			line-height: 105px
+			vertical-align: top
+	p
+		margin-bottom: 0
+		line-height: 24px
+		font-size: 20px
+	+ p
+		margin-right: -30px
+		+ p
+			margin-right: -30px
+			+ p
+				margin-right: -30px
+				margin-bottom: 55px
 
-	.checkbox__label
-		display: block
-		&:before
-			content: ''
-			display: inline-block
-			margin-right: 10px
+.cabinet
+	margin-top: 55px
+	text-align: right
+	h2
+		text-align: center
+		margin-bottom: 10px
+		+ p
+			font-size: 20px
+			text-align: center
+			margin-bottom: 29px
+
+	.wrapper
+		position: relative
+		img
+			position: relative
+			left: 33px 
+		p
+			position: absolute
+			text-align: left
+			line-height: 24px 
+			left: 0
+			&:after
+				content: ""
+				display: block
+				position: absolute
+				top: 12px
+				right: -330px
+				width: 310px
+				height: 1px
+				background: black
+				opacity: 0.3
+			&:nth-of-type(1)
+				top: 117px
+			&:nth-of-type(2)
+				top: 327px
+				&:after
+					width: 297px
+					right: -315px
+			&:nth-of-type(3)
+				top: 860px
+				&:after
+					width: 239px
+					right: -255px
+					top: 35px
+
+.footer
+	background: url("../img/footer.png") no-repeat center bottom
+	background-size: 100% 204px
+	min-height: 204px
+	margin-top: 65px
+	h3
+		text-align: center
+
