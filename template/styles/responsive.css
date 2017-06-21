@@ -21,8 +21,8 @@
       .cabinet .wrapper p:nth-of-type(1) {
         top: 55px;
         text-align: center;
-        left: -webkit-calc(50% - 125px);
-        left: calc(50% - 125px); }
+        left: -webkit-calc(50% - 110px);
+        left: calc(50% - 110px); }
       .cabinet .wrapper p:nth-of-type(2) {
         left: -webkit-calc(50% - 383px);
         left: calc(50% - 383px);
@@ -75,7 +75,9 @@
     padding-top: 30px;
     margin-bottom: 20px; }
     h1 br {
-      display: none; } }
+      display: none; }
+  .text {
+    margin-top: 0; } }
 
 @media screen and (max-width: 540px) {
   h1 {
@@ -97,7 +99,10 @@
       .icons .col:last-of-type {
         margin-bottom: 0; }
     .icons .img {
-      margin-bottom: 5px; } }
+      margin-bottom: 5px; }
+  .footer {
+    min-height: 130px;
+    background-position-y: 30px; } }
 
 @media screen and (max-width: 425px) {
   .text span.bg {
