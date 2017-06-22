@@ -136,11 +136,9 @@ h3 {
 .icons {
   -webkit-border-radius: 3px;
           border-radius: 3px;
-  border: 1px solid #f1eee7;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 54px;
-  margin-right: -45px;
+  padding-top: 20px;
+  padding-bottom: 5px;
   margin-bottom: 35px; }
   .icons .img {
     height: 105px;
